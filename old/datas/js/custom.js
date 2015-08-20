@@ -28,19 +28,23 @@ $(window).trigger('resize');
 //         $(this).scrollTop(scrollTo + $(this).scrollTop());
 //     }
 // })
-
-		$(window).bind('mousewheel', $.proxy(function(e){
+$(function () {
+		$(window).on('mousewheel', function(e){
 
 		    if(e.originalEvent.wheelDelta /120 > 0) {
-		       //alert('up');
-		       // $('.content-body').css('margin-top','-100vh')
+		        //alert('up');
+		        // $('.content-body').css('margin-top','-100vh')
+		        window.scrollBy(0,500); // horizontal and vertical scroll increments
+    		    //scrolldelay = setTimeout('pageScroll()',100);
 		    }
 		    else{
 		    	//alert('down');
+		    	window.scrollBy(0,790); // horizontal and vertical scroll increments
+    			//scrolldelay = setTimeout('pageScroll()',100);
 		    }
 		
-		},this));
-
+		});
+});
 
 $(function () {
 	var logThis = function (e) {
