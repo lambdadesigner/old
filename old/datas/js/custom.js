@@ -34,7 +34,7 @@ $(function () {
 		    if(e.originalEvent.wheelDelta /120 > 0) {
 		        //alert('up');
 		        // $('.content-body').css('margin-top','-100vh')
-		        window.scrollBy(0,500); // horizontal and vertical scroll increments
+		        //window.scrollBy(0,500); // horizontal and vertical scroll increments
     		    //scrolldelay = setTimeout('pageScroll()',100);
 		    }
 		    else{
