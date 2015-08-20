@@ -1,0 +1,109 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://static.pixeltango.com/jQuery/Bullseye/JavaScripts/jquery.bullseye-1.0.js"></script>
+<script type="text/javascript" src="http://static.pixeltango.com/jQuery/Bullseye/JavaScripts/jquery.blink.js"></script>
+    
+    <style type="text/css">
+        ul li span {
+        	padding-left: 10px;
+        	margin-left: 10px;
+        	border-left: 1px #ccc solid;
+        	font-size: .8em;
+        }
+        .outline {
+        	border-right: 250px solid #eee;
+        }
+        #be-small {
+        	width: 400px;
+        	height: 200px;
+        	overflow: auto;
+        	position: relative;
+        }
+        #be-red {
+        	width: 80px;
+        	height: 80px;
+        	position: absolute;
+        	left: 500px;
+        	top: 200px;
+        	background: red;
+        }
+        #be-small-info {
+        	padding-top: 10px;
+        	height: 30px;
+        }
+        .fullpage{
+            height: 100vh;
+        }
+        .outputs{
+            position: fixed;
+            top: 50px;
+        }
+        h2, p{
+            display: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function log(str) {
+            var $e = $('<div>' + str + '</div>');
+            $('#log-content').prepend($e);
+            setTimeout(function () {
+                $e.fadeOut();
+            }, 3000);
+        }
+
+        $(function () {
+            var logThis = function (e) {
+                log($(this).attr('id') + ': ' + e.type);
+
+                if (e.type == 'enterviewport')
+                    $(this).blink({ speed: 50 });
+            };
+
+            setTimeout(function () { // setTimeout really not required, just wanted to make the effect more obvious
+
+$('.bullseye')
+    .bind('enterviewport', logThis)
+    .bind('leaveviewport', logThis)
+    .bullseye()
+                .addClass('outline');
+
+            }, 500);
+        });
+    </script>
+</head>
+<body>
+   
+   
+
+    <div class="box sample bullseye fullpage" id="B1">
+        <h2>Box 1</h2>
+        <p>Check the output log for events.</p>
+    </div>
+
+    <div class="box bullseye fullpage" id="B2">
+        <h2>Box 2</h2>
+        <p>Check the output log for events.</p>
+    </div>
+
+    <div class="box bullseye fullpage" id="B3">
+        <h2>Box 3</h2>
+        <p>Check the output log for events.</p>
+    </div>
+
+    <div class="box bullseye fullpage" id="B4">
+        <h2>Box 4</h2>
+        <p>Check the output log for events.</p>
+    </div>
+
+    <div class="box bullseye fullpage" id="B5">
+        <h2>Box 5</h2>
+        <p>Check the output log for events.</p>
+    </div>
+    
+    <div id="log" class="outputs">
+        <h3>Output</h3>
+        <div id="log-content"></div>
+    </div>
+
+</body>
+</html>

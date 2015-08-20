@@ -1,0 +1,48 @@
+
+/*Nav Bar*/
+.navbar-header {
+    height: 90px;
+}
+/*Nav Bar Links*/
+.navbar-default .navbar-nav>li>a {
+    color: #777;
+    padding: 35px 25px;
+    text-align: center;
+}
+#navbar li{
+  width: 120px;
+}
+/*Nav Bar active links*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+    /*background-image: -webkit-linear-gradient(top,#dbdbdb 0,#e2e2e2 100%);
+    background-image: -o-linear-gradient(top,#dbdbdb 0,#e2e2e2 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#dbdbdb),to(#e2e2e2));
+    background-image: linear-gradient(to bottom,#dbdbdb 0,#e2e2e2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdbdbdb', endColorstr='#ffe2e2e2', GradientType=0);
+    background-repeat: repeat-x;
+    -webkit-box-shadow: inset 0 3px 9px rgba(0,0,0,.075);
+    box-shadow: inset 0 3px 9px rgba(0,0,0,.075);*/
+    background: url(../images/active-bg.png);
+    padding: 35px 25px;
+    color: white;
+}
+
+.navbar-brand{
+    float:left;
+    height:50px;
+    padding:15px 15px;
+    font-size:18px;
+    line-height:20px;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size:190px;
+    width: 200px;
+    margin-top: 18px;
+
+}
+
+.navbar {
+    border: 0px solid transparent;
+
+}
