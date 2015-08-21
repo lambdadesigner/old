@@ -75,3 +75,15 @@ of those sections to manage the look and feel of the site. */
     position: relative;
     bottom: 0px;
 }
+
+
+/*First Section*/
+
+.bg-image{
+    background: url(../images/first-img.png) #303032;
+    background-repeat: no-repeat;
+    width: auto;
+    min-width: 90%;
+    height: 100vh;
+    /*position: absolute;*/
+}

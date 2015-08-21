@@ -1,0 +1,52 @@
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+	#FirstScreen {
+	   background: url(../images/first-img.png) no-repeat #303032; /*in the case you have another image for this resolution*/
+		background-size: 1024px 768px;
+	}
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	#FirstScreen {
+		background: url(../images/first-img.png) no-repeat #303032; /*in the case you have another image for this resolution*/
+		background-size: 800px 600px;
+	}
+	.navbar-default .navbar-nav>li>a {
+	    color: #777;
+	    padding: 35px 10px;
+	}
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	#FirstScreen {
+		background: url(../images/first-img.png) no-repeat #303032; /*in the case you have another image for this resolution*/
+		background-size: 640px 480px;
+	}
+	.navbar-default .navbar-nav>li>a {
+		color: #777;
+		padding: 35px 10px;
+		font-size: 0.9em;
+	}
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	#FirstScreen {
+		background: url(../images/first-img.png) no-repeat #303032; /*in the case you have another image for this resolution*/
+		background-size: 320px 240px;
+	}
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	#FirstScreen {
+		background: #303032; /*in the case you have another image for this resolution - usually you'll never have these sizes as for today*/
+		background-size: 200px 150px;
+	}
+}
