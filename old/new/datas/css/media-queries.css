@@ -1,52 +1,83 @@
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-	#FirstScreen {
-	   background: url(../images/first-img.png) no-repeat #303032; /*in the case you have another image for this resolution*/
-		background-size: 1024px 768px;
+	.bg-image{
+		background: url(../images/first-img.png) #303032;
+		background-repeat: no-repeat;
+		width: auto;
+		min-width: 90%;
+		height: 100vh;
+		/*position: absolute;*/
 	}
+	#development .developmentprocess{
+		background: url(../images/development-process.png);
+		background-repeat: no-repeat;
+		background-position: 0 30%;
+		background-size: 100% auto;
+		min-height: 100%;
+	 }
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-	#FirstScreen {
-		background: url(../images/first-img.png) no-repeat #303032; /*in the case you have another image for this resolution*/
-		background-size: 800px 600px;
+	.bg-image{
+		background: url(../images/first-img.png) #303032;
+		background-repeat: no-repeat;
+		width: auto;
+		min-width: 90%;
+		height: 100vh;
+		/*position: absolute;*/
 	}
-	.navbar-default .navbar-nav>li>a {
-	    color: #777;
-	    padding: 35px 10px;
-	}
-
+	#development .developmentprocess{
+		background: url(../images/development-process.png);
+		background-repeat: no-repeat;
+		background-position: 0 30%;
+		background-size: 100% auto;
+		min-height: 100%;
+	 }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-	#FirstScreen {
-		background: url(../images/first-img.png) no-repeat #303032; /*in the case you have another image for this resolution*/
-		background-size: 640px 480px;
+	.bg-image{
+		background: #303032;
 	}
-	.navbar-default .navbar-nav>li>a {
-		color: #777;
-		padding: 35px 10px;
-		font-size: 0.9em;
-	}
-
+	#development .developmentprocess{
+		background: transparent;
+	 }
+	 #development .developmentprocess .box2, #development .developmentprocess .box3, #development .developmentprocess .box1{
+	 	top: 0;
+	 	left: 0;
+	 	margin-top: 0;
+	 }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-	#FirstScreen {
-		background: url(../images/first-img.png) no-repeat #303032; /*in the case you have another image for this resolution*/
-		background-size: 320px 240px;
+	.bg-image{
+		background: #303032;
 	}
-
+	#development .developmentprocess{
+		background: transparent;
+	 }
+	#development .developmentprocess .box2, #development .developmentprocess .box3, #development .developmentprocess .box1{
+		top: 0;
+		left: 0;
+		margin-top: 0;
+	}
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-	#FirstScreen {
-		background: #303032; /*in the case you have another image for this resolution - usually you'll never have these sizes as for today*/
-		background-size: 200px 150px;
+	.bg-image{
+		background: #303032;
+	}
+	#development .developmentprocess{
+		background:transparent;
+	 }
+ #development .developmentprocess .box2, #development .developmentprocess .box3, #development .developmentprocess .box1{
+		top: 0;
+		left: 0;
+		margin-top: 0;
 	}
 }
